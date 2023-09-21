@@ -22,8 +22,11 @@
     "@webpack-cli/generators": "^3.0.7",
     "autoprefixer": "^10.4.15",
     "concurrently": "^8.2.1",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "daisyui": "^3.7.6",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "postcss": "^8.4.30",
     "postcss-cli": "^10.1.0",
@@ -36,10 +39,10 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
-    "workbox-webpack-plugin": "^7.0.0"
-  },
-  "dependencies": {
+    "workbox-webpack-plugin": "^7.0.0",
     "@fortawesome/fontawesome-free": "^6.4.2",
     "theme-change": "^2.5.0"
+  },
+  "dependencies": {
   }
 }

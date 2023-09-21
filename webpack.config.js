@@ -2,10 +2,8 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == 'production';
-
 
 const config = {
     entry: './public/index.ts',
@@ -30,10 +28,6 @@ const config = {
                 exclude: ['/node_modules/'],
             },
             {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                type: 'asset',
-            },
-            {
               test: /\.css$/i,
               use: ['style-loader', 'css-loader', 'postcss-loader'],
             },
@@ -41,6 +35,10 @@ const config = {
               test: /\.(svg|eot|woff|woff2|ttf)$/,
               type: 'asset/resource'
             },
+            {
+              test: /\.html$/,
+              use: 'html-loader',
+            },  
             // Add your rules for custom modules here
             // Learn more about loaders from https://webpack.js.org/loaders/
         ],
@@ -53,10 +51,6 @@ const config = {
 module.exports = () => {
     if (isProduction) {
         config.mode = 'production';
-        
-        
-        config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
-        
     } else {
         config.mode = 'development';
     }
