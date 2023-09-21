@@ -16,13 +16,14 @@
     </div>
     
     <div class="navbar-end">
-      <label class="swap swap-rotate" for="theme-change-toggle">
-        <input type="checkbox" id="theme-change-toggle" class="w-100 h-100"/>
-        <!-- <img src="assets/moon.svg" data-set-theme="dark" class="swap-on fill-current w-10 h-10" /> -->
-        <i data-set-theme="light" class="fa-solid fa-moon swap-on fill-current text-base p-3"></i>
-        <i data-set-theme="dark" class="fa-solid fa-sun swap-off fill-current text-base p-3"></i>
-        <!-- <img src="assets/sun.svg" data-set-theme="light" class="swap-off fill-current w-10 h-10" /> -->
-      </label>
+      <div id="theme-change-toggle">
+        <button data-set-theme="dark" class="btn bth-ghost">
+          <i class="fa-solid fa-moon fa-fw fill-current text-base p-100"></i>
+        </button>
+        <button data-set-theme="light" class="btn bth-ghost">
+          <i class="fa-solid fa-sun fa-fw fill-current text-base p-100"></i>
+        </button>
+      </div>
     </div>
   </div>
 

@@ -39,7 +39,7 @@ const config = {
             },
             {
               test: /\.(svg|eot|woff|woff2|ttf)$/,
-              type: 'asset/inline'
+              type: 'asset/resource'
             },
             // Add your rules for custom modules here
             // Learn more about loaders from https://webpack.js.org/loaders/
