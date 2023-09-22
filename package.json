@@ -1,5 +1,5 @@
 {
-  "name": "my-webpack-project",
+  "name": "algopro-web",
   "version": "1.0.0",
   "description": "My webpack project",
   "main": "app.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kristofy/algopro.git"
+    "url": "git+https://github.com/algoproclub/algopro-web.git"
   },
   "author": "Kristóf Osztopáni",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Kristofy/algopro/issues"
+    "url": "https://github.com/algoproclub/algopro-web/issues"
   },
-  "homepage": "https://github.com/Kristofy/algopro#readme",
+  "homepage": "https://github.com/algoproclub/algopro-web#readme",
   "devDependencies": {
     "@webpack-cli/generators": "^3.0.7",
     "autoprefixer": "^10.4.15",
