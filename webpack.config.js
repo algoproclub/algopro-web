@@ -20,6 +20,10 @@ const config = {
         new HtmlWebpackPlugin({
             template: 'public/index.html',
         }),
+        new HtmlWebpackPlugin({
+            template: 'public/en.html',
+            filename: 'en.html',
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from:'content', to:'content' }
