@@ -3,7 +3,7 @@ module.exports = {
 
   // add daisyUI plugin
   plugins: [require("daisyui")],
-  content: ['./public/*.html'],
+  content: ['./public/**/*.{html,js,ts}'],
   // daisyUI config (optional - here are the default values)
   daisyui: {
     // themes: false, // comment this line and uncomment bellow for custom light and dark mode

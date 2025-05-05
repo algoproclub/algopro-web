@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KódKaland - Nyári napközis programozás tábor 5-6. osztályosoknak</title>
+    <meta name="description"
+        content="Szeretettel várjuk azokat az 5-6. osztályos diákokat, akik érdeklődnek a programozás iránt, az Algo Pro Club ingyenes nyári napközis táborába, a KódKalandba!">
+
+    <!-- Favicons and Manifest (relative paths adjusted) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" href="assets/favicon.svg"> <!-- Specific KódKaland favicon -->
+
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff"> <!-- Adjust theme color if needed -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BCQY30PCF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8BCQY30PCF');
+    </script>
+</head>
+
+<body class="bg-base-100 font-sans text-base-content">
+
+    <!-- Header -->
+    <header class="navbar bg-base-200 z-[100] sticky top-0 shadow">
+        <div class="navbar-start">
+            <a href="/" class="flex items-center">
+                <img src="../assets/algo_pro_logo_wobg.png" alt="Algo Pro Club logo" class="w-[40px] h-[40px] mr-2">
+                <span class="text-xl font-bold hidden sm:inline">Algo Pro Club</span>
+            </a>
+        </div>
+        <div class="navbar-center">
+            <h1 class="text-xl sm:text-2xl font-bold">KódKaland Tábor</h1>
+        </div>
+        <div class="navbar-end">
+            <a href="#jelentkezes" class="btn btn-primary btn-sm sm:btn-md">Jelentkezés</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero min-h-[75vh] text-primary-content bg-cover bg-center bg-[url('assets/taborrol.jpg')]">
+        <div class="hero-content text-center py-16 md:py-24">
+            <div class="max-w-4xl bg-black/50 p-8 md:p-10 rounded-lg shadow-2xl backdrop-blur-sm">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg text-white">KódKaland - Nyári napközis
+                    programozás tábor 5-6. osztályosoknak</h1>
+                <p class="mt-6 text-lg md:text-2xl text-white font-medium drop-shadow-lg">Szeretettel várjuk azokat az
+                    5-6. osztályos diákokat, akik érdeklődnek a programozás iránt, az Algo Pro Club ingyenes nyári
+                    napközis táborába, a <b>KódKalandba!</b> A tábor 2025. július 14-18. között kerül megrendezésre Budapesten,
+                    a III. kerületben. A gyerekeket izgalmas programozási foglalkozásokkal és játékos délutáni
+                    programokkal várjuk.</p>
+                <a href="#taborrol" class="btn btn-accent btn-lg mt-8 shadow-lg">Tudj meg többet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Sections -->
+    <main class="container mx-auto px-4 py-12 md:py-20">
+
+        <!-- Section: A táborról -->
+        <section class="mb-12 md:mb-20 scroll-mt-20" id="taborrol">
+            <div
+                class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-4 text-primary">A táborról</h2>
+                    <p class="mb-3">Hétfőtől péntekig, minden nap <b>9:00-17:00 óráig</b> várjuk a gyerekeket. Délelőttönként
+                        90 perces programozási foglalkozások lesznek <b>kis létszámú csoportokban</b>, délután pedig változatos
+                        játékos programok: többek között társasjátékok, frizbi, számháború és más közösségi
+                        tevékenységek.</p>
+                    <p class="mb-3">A programozási foglalkozásokon a gyerekek <b>Python vagy C++</b> nyelv közül választhatnak.
+                        Oktatásunk a gondolkodásra és önálló problémamegoldásra épít.</p>
+                    <p>A résztvevők számára napi <b>háromszori étkezést</b> (tízórai, ebéd, uzsonna) biztosítunk. A tábor
+                        <b>alapvetően bejárós</b>, de amennyiben vidéki résztvevők szállást igényelnek, azt igyekszünk
+                        megoldani.</p>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <img src="assets/taborrol.jpg" alt="A táborról"
+                        class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Kiket várunk? -->
+        <section class="mb-12 md:mb-20 scroll-mt-20" id="kiket-varunk">
+            <div
+                class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-4 text-secondary">Kiket várunk?</h2>
+                    <p>A tábort olyan diákoknak szervezzük, akik az idei tanévben 5. vagy 6. osztályba jártak, és
+                        szívesen ismerkednének meg a programozással. <b>Nincs szükség előzetes tudásra</b>, de a tábor
+                        különösen azoknak ajánlott, akik élvezik a logikus gondolkodást és a fejtörő feladatokat.
+                        Túljelentkezés esetén a matematikai és (ha van) informatikai versenyeredmények alapján
+                        választjuk ki a résztvevőket. A tábor létszáma legfeljebb 45 fő. A tanítás teljesen kezdő
+                        szinttől indul, így a résztvevők már az alapoktól megismerhetik a választott nyelvet (Python
+                        vagy C++). Bár előképzettség nem feltétel, a korábbi tapasztalat (pl. Scratch, Logo, LEGO
+                        robotika, Logiscool) előnyt jelenthet.</p>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <img src="assets/kiketvarunk.jpg" alt="Kiket várunk"
+                        class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Oktatók -->
+        <section class="mb-12 md:mb-20 scroll-mt-20" id="oktatok">
+            <div
+                class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-4 text-accent">Oktatók</h2>
+                    <p>A tábor vezetője az egyesületünk elnöke, <b>Nikházy László</b>, Tarján-emlékérmes tehetséggondozó, aki
+                        több, mint 15 éves programozás oktatási tapasztalattal rendelkezik, és mintegy 60
+                        tehetséggondozó tábort szervezett már. Segítői: Bertalan Dávid, Németh Marcell és Tarján Bernát,
+                        tehetséges egyetemisták, akik már középiskolás korukban is kiemelkedő eredményeket értek el
+                        programozásból.</p>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <img src="assets/oktatok.jpg" alt="Oktatók"
+                        class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Helyszín -->
+        <section class="mb-12 md:mb-20 scroll-mt-20" id="helyszin">
+            <div
+                class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-4 text-info">Helyszín</h2>
+                    <p class="mb-3">A tábor helyszíne: <b>AIT Budapest Campus</b>, egy modern, barátságos
+                        egyetemi épület a Graphisoft Parkban (<b>1031 Budapest, Záhony utca 7.strong
+strong</b> - <a
+                            href="https://maps.app.goo.gl/YE5Tq29oARjVU9eW7" class="link link-primary" target="_blank"
+                            rel="noopener noreferrer">térkép</a>)</p>
+                    <h3 class="text-xl font-semibold mb-2">Megközelítés:</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Gyalogosan 10-15 perc az Aquincum HÉV-megállótól</li>
+                        <li>Busszal: 34, 106, 134 (a Göncz Árpád városközpont metró megállótól)</li>
+                        <li>Autóval is jól megközelíthető, parkolási lehetőség van.</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <img src="assets/helyszin.jpg" alt="Helyszín"
+                        class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Költségek -->
+        <section class="mb-12 md:mb-20 scroll-mt-20" id="koltsegek">
+            <div
+                class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
+                <div class="md:w-1/2 order-2 md:order-1">
+                    <h2 class="text-3xl font-bold mb-4 text-success">Költségek</h2>
+                    <p>A <b>KódKaland</b> tábort az Algo Pro Club nonprofit egyesület szervezi, amelynek célja a fiatal
+                        tehetségek támogatása. A részvétel <b>ingyenes</b>. A tábor költségeit (étkezés, oktatók díjazása stb.)
+                        főként a szülőktől érkező <b>önkéntes adományokból</b> fedezzük. A tábor egy főre jutó becsült költsége
+                        kb. 40.000 Ft, de mindenki maga dönt arról, hogy kívánja-e és milyen összeggel támogatni az
+                        eseményt. A támogatás semmilyen módon nem befolyásolja a részvétel lehetőségét.</p>
+                </div>
+                <div class="md:w-1/2 order-1 md:order-2">
+                    <img src="assets/koltsegek.jpg" alt="Költségek"
+                        class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Jelentkezés -->
+        <section
+            class="text-center py-10 md:py-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg shadow-xl scroll-mt-20"
+            id="jelentkezes">
+            <div class="max-w-2xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Jelentkezés</h2>
+                <p class="mb-4 text-lg text-blue-100">Jelentkezni az alábbi gombra kattintva elérhető űrlap kitöltésével
+                    lehet.</p>
+                <p class="mb-4 text-lg text-blue-100">📅 <b>Jelentkezési határidő: május 25.</b></p>
+                <p class="mb-4 text-lg text-blue-100">A résztvevőket május végéig értesítjük a meghívásról. Bízunk
+                    benne, hogy minden jelentkezőt fogadni tudunk.</p>
+                <p class="mb-6 text-lg text-blue-100">Ha bármilyen kérdésük lenne, örömmel válaszolunk! Szeretettel
+                    várjuk a gyerekeket egy élménydús, gondolkodtató, játékos hétre!</p>
+                <a href="#" class="btn btn-accent btn-lg transition hover:scale-105 duration-300">Jelentkezés a
+                    KódKalandra!</a>
+                <!-- TODO: Replace # with the actual application form link -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer p-4 bg-base-300 text-base-content flex flex-row items-center justify-between">
+        <aside class="items-center grid-flow-col">
+            <a href="/" class="flex items-center">
+                <img src="../assets/algo_pro_logo_wobg.png" alt="algo pro logo" class="mr-2 w-[30px] h-[30px]">
+                <p>Algo Pro Club</p>
+            </a>
+        </aside>
+        <nav class="md:place-self-center md:justify-self-end">
+            <div class="grid grid-flow-col gap-4">
+                <p>Copyright © 2025 - All right reserved | <a href="/content/adatvedelmi_tajekoztato.pdf"
+                        target="_blank" class="link link-hover">Adatvédelmi tájékoztató</a></p>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

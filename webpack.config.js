@@ -19,6 +19,11 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'public/index.html',
+            filename: 'index.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: 'public/kodkaland/index.html',
+            filename: 'kodkaland/index.html',
         }),
         new HtmlWebpackPlugin({
             template: 'public/en.html',
@@ -26,7 +31,7 @@ const config = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from:'content', to:'content' }
+                { from: 'content', to: 'content' }
             ],
         }),
     ],
@@ -38,17 +43,28 @@ const config = {
                 exclude: ['/node_modules/'],
             },
             {
-              test: /\.css$/i,
-              use: ['style-loader', 'css-loader', 'postcss-loader'],
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader', {
+                    loader: 'postcss-loader',
+                    options: {
+                        postcssOptions: {
+                            plugins: [
+                                require('tailwindcss'),
+                                require('autoprefixer'),
+                            ],
+                        },
+                    },
+                },
+                ],
             },
             {
-              test: /\.(svg|eot|woff|woff2|ttf)$/,
-              type: 'asset/resource'
+                test: /\.(svg|eot|woff|woff2|ttf)$/,
+                type: 'asset/resource'
             },
             {
-              test: /\.html$/,
-              use: 'html-loader',
-            },  
+                test: /\.html$/,
+                use: 'html-loader',
+            },
             // Add your rules for custom modules here
             // Learn more about loaders from https://webpack.js.org/loaders/
         ],
