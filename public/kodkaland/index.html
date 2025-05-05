@@ -43,7 +43,18 @@
             <h1 class="text-xl sm:text-2xl font-bold">KódKaland Tábor</h1>
         </div>
         <div class="navbar-end">
-            <a href="#jelentkezes" class="btn btn-primary btn-sm sm:btn-md">Jelentkezés</a>
+            <a href="#jelentkezes" class="btn btn-primary hidden lg:inline-flex mr-3">Jelentkezés</a>
+
+            <div id="theme-change-toggle">
+                <button data-set-theme="dark" class="btn bth-ghost">
+                    <i class="fa-solid fa-moon fa-fw fill-current text-base p-100"></i>
+                </button>
+                <button data-set-theme="light" class="btn bth-ghost">
+                    <i class="fa-solid fa-sun fa-fw fill-current text-base p-100"></i>
+                </button>
+            </div>
+        </div>
+
         </div>
     </header>
 
@@ -55,7 +66,8 @@
                     programozás tábor 5-6. osztályosoknak</h1>
                 <p class="mt-6 text-lg md:text-2xl text-white font-medium drop-shadow-lg">Szeretettel várjuk azokat az
                     5-6. osztályos diákokat, akik érdeklődnek a programozás iránt, az Algo Pro Club ingyenes nyári
-                    napközis táborába, a <b>KódKalandba!</b> A tábor 2025. július 14-18. között kerül megrendezésre Budapesten,
+                    napközis táborába, a <b>KódKalandba!</b> A tábor 2025. július 14-18. között kerül megrendezésre
+                    Budapesten,
                     a III. kerületben. A gyerekeket izgalmas programozási foglalkozásokkal és játékos délutáni
                     programokkal várjuk.</p>
                 <a href="#taborrol" class="btn btn-accent btn-lg mt-8 shadow-lg">Tudj meg többet</a>
@@ -72,15 +84,20 @@
                 class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
                 <div class="md:w-1/2 order-2 md:order-1">
                     <h2 class="text-3xl font-bold mb-4 text-primary">A táborról</h2>
-                    <p class="mb-3">Hétfőtől péntekig, minden nap <b>9:00-17:00 óráig</b> várjuk a gyerekeket. Délelőttönként
-                        90 perces programozási foglalkozások lesznek <b>kis létszámú csoportokban</b>, délután pedig változatos
+                    <p class="mb-3">Hétfőtől péntekig, minden nap <b>9:00-17:00 óráig</b> várjuk a gyerekeket.
+                        Délelőttönként
+                        90 perces programozási foglalkozások lesznek <b>kis létszámú csoportokban</b>, délután pedig
+                        változatos
                         játékos programok: többek között társasjátékok, frizbi, számháború és más közösségi
                         tevékenységek.</p>
-                    <p class="mb-3">A programozási foglalkozásokon a gyerekek <b>Python vagy C++</b> nyelv közül választhatnak.
+                    <p class="mb-3">A programozási foglalkozásokon a gyerekek <b>Python vagy C++</b> nyelv közül
+                        választhatnak.
                         Oktatásunk a gondolkodásra és önálló problémamegoldásra épít.</p>
-                    <p>A résztvevők számára napi <b>háromszori étkezést</b> (tízórai, ebéd, uzsonna) biztosítunk. A tábor
+                    <p>A résztvevők számára napi <b>háromszori étkezést</b> (tízórai, ebéd, uzsonna) biztosítunk. A
+                        tábor
                         <b>alapvetően bejárós</b>, de amennyiben vidéki résztvevők szállást igényelnek, azt igyekszünk
-                        megoldani.</p>
+                        megoldani.
+                    </p>
                 </div>
                 <div class="md:w-1/2 order-1 md:order-2">
                     <img src="assets/taborrol.jpg" alt="A táborról"
@@ -117,7 +134,8 @@
                 class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
                 <div class="md:w-1/2 order-2 md:order-1">
                     <h2 class="text-3xl font-bold mb-4 text-accent">Oktatók</h2>
-                    <p>A tábor vezetője az egyesületünk elnöke, <b>Nikházy László</b>, Tarján-emlékérmes tehetséggondozó, aki
+                    <p>A tábor vezetője az egyesületünk elnöke, <b>Nikházy László</b>, Tarján-emlékérmes
+                        tehetséggondozó, aki
                         több, mint 15 éves programozás oktatási tapasztalattal rendelkezik, és mintegy 60
                         tehetséggondozó tábort szervezett már. Segítői: Bertalan Dávid, Németh Marcell és Tarján Bernát,
                         tehetséges egyetemisták, akik már középiskolás korukban is kiemelkedő eredményeket értek el
@@ -138,9 +156,8 @@
                     <h2 class="text-3xl font-bold mb-4 text-info">Helyszín</h2>
                     <p class="mb-3">A tábor helyszíne: <b>AIT Budapest Campus</b>, egy modern, barátságos
                         egyetemi épület a Graphisoft Parkban (<b>1031 Budapest, Záhony utca 7.strong
-strong</b> - <a
-                            href="https://maps.app.goo.gl/YE5Tq29oARjVU9eW7" class="link link-primary" target="_blank"
-                            rel="noopener noreferrer">térkép</a>)</p>
+                            strong</b> - <a href="https://maps.app.goo.gl/YE5Tq29oARjVU9eW7" class="link link-primary"
+                            target="_blank" rel="noopener noreferrer">térkép</a>)</p>
                     <h3 class="text-xl font-semibold mb-2">Megközelítés:</h3>
                     <ul class="list-disc list-inside space-y-1">
                         <li>Gyalogosan 10-15 perc az Aquincum HÉV-megállótól</li>
@@ -162,8 +179,10 @@ strong</b> - <a
                 <div class="md:w-1/2 order-2 md:order-1">
                     <h2 class="text-3xl font-bold mb-4 text-success">Költségek</h2>
                     <p>A <b>KódKaland</b> tábort az Algo Pro Club nonprofit egyesület szervezi, amelynek célja a fiatal
-                        tehetségek támogatása. A részvétel <b>ingyenes</b>. A tábor költségeit (étkezés, oktatók díjazása stb.)
-                        főként a szülőktől érkező <b>önkéntes adományokból</b> fedezzük. A tábor egy főre jutó becsült költsége
+                        tehetségek támogatása. A részvétel <b>ingyenes</b>. A tábor költségeit (étkezés, oktatók
+                        díjazása stb.)
+                        főként a szülőktől érkező <b>önkéntes adományokból</b> fedezzük. A tábor egy főre jutó becsült
+                        költsége
                         kb. 40.000 Ft, de mindenki maga dönt arról, hogy kívánja-e és milyen összeggel támogatni az
                         eseményt. A támogatás semmilyen módon nem befolyásolja a részvétel lehetőségét.</p>
                 </div>
