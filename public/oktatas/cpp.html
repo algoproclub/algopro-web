@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ szakkörök - Algo Pro Club</title>
+    <meta name="description" content="C++ programozási szakkörök 5 szinten - kezdőtől a nemzetközi olimpiai szintig. Algoritmikus problémamegoldás, versenyprogramozás és logikus gondolkodás fejlesztése.">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#111827">
+
+    <link href="../styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-base-100 font-sans text-base-content">
+
+    <header class="navbar bg-base-200 z-[100] sticky top-0 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown lg:hidden">
+                <label tabindex="0" class="btn btn-ghost">
+                    <i class="fas fa-bars text-xl"></i>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                    <li><a href="/">Főoldal</a></li>
+                    <li><a href="/oktatas">Oktatás</a></li>
+                    <li><a href="/kodkaland">Kódkaland</a></li>
+                </ul>
+            </div>
+            <a href="/" class="flex items-center gap-2">
+                <img src="../assets/algo_pro_logo_wobg.png" alt="logo" class="w-[40px] h-[40px]">
+            </a>
+        </div>
+
+        <div class="navbar-center">
+            <h1><a class="btn btn-ghost normal-case text-lg" href="/">Algo Pro Club</a></h1>
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-sm">
+                    <li><a href="/" class="font-medium">Főoldal</a></li>
+                    <li><a href="/oktatas" class="font-medium">Oktatás</a></li>
+                    <li><a href="/kodkaland" class="font-medium">Kódkaland</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <a class="btn btn-primary btn-sm mr-3" href="https://forms.gle/Bac1F2kRzMzP3dvJ8" target="_blank">
+                <i class="fas fa-rocket text-xs"></i>
+                Jelentkezz Most
+            </a>
+            <a href="../en.html" class="mx-2" title="English version">
+                <img src="../assets/united-states.png" alt="English" class="w-[32px] h-[32px]">
+            </a>
+            <div id="theme-change-toggle">
+                <button data-set-theme="dark" class="btn btn-ghost btn-sm">
+                    <i class="fa-solid fa-moon fa-fw"></i>
+                </button>
+                <button data-set-theme="light" class="btn btn-ghost btn-sm">
+                    <i class="fa-solid fa-sun fa-fw"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-base-100 pt-8 pb-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg mb-6 w-fit mx-auto">
+                    <i class="fas fa-code text-3xl text-blue-600 dark:text-blue-400"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">C++ szakkörök</h1>
+                <p class="text-lg md:text-xl text-base-content/80 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    A C++ nyelv izgalmas és sokoldalú: a versenyek gondolkodtató feladatai mellett a problémamegoldás öröme áll a középpontban.
+                </p>
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <div class="bg-base-200 border border-base-300 dark:border-base-content/10 px-4 py-2 rounded-lg">
+                        <span class="font-medium">5 szint</span>
+                    </div>
+                    <div class="bg-base-200 border border-base-300 dark:border-base-content/10 px-4 py-2 rounded-lg">
+                        <span class="font-medium">Kezdőtől profi szintig</span>
+                    </div>
+                    <div class="bg-base-200 border border-base-300 dark:border-base-content/10 px-4 py-2 rounded-lg">
+                        <span class="font-medium">Versenyprogramozás</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-12 md:py-20">
+
+        <!-- Section: Bevezetés -->
+        <section class="mb-12 md:mb-20">
+            <div class="bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded">
+                        <i class="fas fa-info-circle text-xl text-blue-600 dark:text-blue-400"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700 dark:text-blue-300">A C++ szakkörökről</h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-base-100 p-6 rounded border-l-4 border-blue-500">
+                        <p class="text-lg leading-relaxed">
+                            Szakköreink célja <strong class="text-blue-700 dark:text-blue-300">nem a versenyzés</strong>, hanem a <strong>logikus gondolkodás</strong>, <strong>algoritmikus szemlélet</strong> és a <strong>szép feladatok élvezete</strong>, ugyanakkor a versenyekre készüléshez is ideálisak a foglalkozásaink.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-base-100 p-6 rounded border">
+                        <p class="text-lg leading-relaxed">
+                            A C++ szakköreink <strong class="text-blue-700 dark:text-blue-300">5 szinten</strong> zajlanak, a teljesen kezdőtől a nemzetközi diákolimpiai szintig. A szintek <strong>rugalmasan válthatók</strong>, így a tanulók mindig a tudásuknak és fejlődési ütemüknek megfelelő csoportban dolgozhatnak.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Szintek -->
+        <section class="mb-12 md:mb-20 scroll-mt-20" id="szintek">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded">
+                    <i class="fas fa-layer-group text-xl text-blue-600 dark:text-blue-400"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-700 dark:text-blue-300">C++ szakkör szintek</h2>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Bagoly csoport -->
+                <div class="bg-base-200 p-8 rounded-lg border-l-4 border-green-500">
+                    <div class="flex flex-col lg:flex-row items-start gap-6">
+                        <div class="lg:w-2/3 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded">
+                                    <i class="fas fa-code text-xl text-green-600 dark:text-green-400"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-green-700 dark:text-green-300">Bagoly csoport – Kezdő</h3>
+                            </div>
+                            
+                            <div class="bg-base-100 p-4 rounded">
+                                <p class="text-lg font-semibold text-green-700 dark:text-green-300 mb-2">Cél:</p>
+                                <p class="mb-4">A programozás alapjai és gondolkodtató feladatok.</p>
+                                
+                                <p class="text-lg font-semibold text-green-700 dark:text-green-300 mb-2">Ajánlott korosztály:</p>
+                                <p class="mb-4">10–18 éves diákok, <strong>előismeret nem szükséges</strong>.</p>
+                                
+                                <p class="text-lg font-semibold text-green-700 dark:text-green-300 mb-2">Főbb témák:</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">if utasítás</span>
+                                    <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">for ciklus</span>
+                                    <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">változók</span>
+                                    <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">vector</span>
+                                    <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">string</span>
+                                    <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">rendezés</span>
+                                    <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">függvények</span>
+                                    <span class="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-3 py-1 rounded-full text-sm">rekurzió</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lg:w-1/3">
+                            <div class="bg-green-50 dark:bg-green-900/20 p-4 rounded border border-green-200 dark:border-green-700">
+                                <p class="text-lg font-semibold text-green-700 dark:text-green-300 mb-2">Órák:</p>
+                                <div class="space-y-1">
+                                    <p class="text-green-800 dark:text-green-200">📅 Csütörtök 16:30–18:30</p>
+                                    <p class="text-green-800 dark:text-green-200">📅 Szombat 9:00–11:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cápa csoport -->
+                <div class="bg-base-200 p-8 rounded-lg border-l-4 border-blue-500">
+                    <div class="flex flex-col lg:flex-row items-start gap-6">
+                        <div class="lg:w-2/3 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded">
+                                    <i class="fas fa-code text-xl text-blue-600 dark:text-blue-400"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-blue-700 dark:text-blue-300">Cápa csoport – Algoritmikus problémamegoldás</h3>
+                            </div>
+                            
+                            <div class="bg-base-100 p-4 rounded">
+                                <p class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Cél:</p>
+                                <p class="mb-4">Algoritmikus problémamegoldási módszerek, alapvető adatszerkezetek használata, programok hatékonyságának elemzése.</p>
+                                
+                                <p class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Elvárt előismeretek:</p>
+                                <p class="mb-4">if utasítás, for ciklus, beolvasás-kiírás, változók, típusok, tömb/vector, maximumkiválasztás.</p>
+                                
+                                <p class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Főbb témák:</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">függvények</span>
+                                    <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">mohó algoritmusok</span>
+                                    <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">dinamikus programozás</span>
+                                    <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">C++ set és map</span>
+                                    <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">két mutató technika</span>
+                                    <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-3 py-1 rounded-full text-sm">bináris keresés</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lg:w-1/3">
+                            <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded border border-blue-200 dark:border-blue-700">
+                                <p class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Órák:</p>
+                                <div class="space-y-1">
+                                    <p class="text-blue-800 dark:text-blue-200">📅 Kedd 16:30–18:30</p>
+                                    <p class="text-blue-800 dark:text-blue-200">📅 Szerda 16:30–18:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kajmán csoport -->
+                <div class="bg-base-200 p-8 rounded-lg border-l-4 border-purple-500">
+                    <div class="flex flex-col lg:flex-row items-start gap-6">
+                        <div class="lg:w-2/3 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded">
+                                    <i class="fas fa-code text-xl text-purple-600 dark:text-purple-400"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-purple-700 dark:text-purple-300">Kajmán csoport – Hazai versenyekre felkészítő</h3>
+                            </div>
+                            
+                            <div class="bg-base-100 p-4 rounded">
+                                <p class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">Cél:</p>
+                                <p class="mb-4">Összetett algoritmusok, gráfelmélet, hazai versenyekre felkészítés.</p>
+                                
+                                <p class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">Elvárt előismeretek:</p>
+                                <p class="mb-4">Cápa szintje – 2D tömb/vector, set és map, rendezés, mohó algoritmusok, dinamikus programozás, prefix összegek.</p>
+                                
+                                <p class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">Főbb témák:</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">gráfbejárás</span>
+                                    <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">legrövidebb utak</span>
+                                    <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">prioritási sor</span>
+                                    <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">Hátizsák-problémakör</span>
+                                    <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full text-sm">LCS, LIS</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lg:w-1/3">
+                            <div class="bg-purple-50 dark:bg-purple-900/20 p-4 rounded border border-purple-200 dark:border-purple-700">
+                                <p class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">Órák:</p>
+                                <div class="space-y-1">
+                                    <p class="text-purple-800 dark:text-purple-200">📅 Hétfő 16:30–18:30</p>
+                                    <p class="text-purple-800 dark:text-purple-200">📅 Kedd 16:30–18:30</p>
+                                    <p class="text-purple-800 dark:text-purple-200">📅 Szerda 16:30–18:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sas csoport -->
+                <div class="bg-base-200 p-8 rounded-lg border-l-4 border-orange-500">
+                    <div class="flex flex-col lg:flex-row items-start gap-6">
+                        <div class="lg:w-2/3 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded">
+                                    <i class="fas fa-code text-xl text-orange-600 dark:text-orange-400"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-orange-700 dark:text-orange-300">Sas csoport – Haladó algoritmusok és olimpiai válogató</h3>
+                            </div>
+                            
+                            <div class="bg-base-100 p-4 rounded">
+                                <p class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-2">Cél:</p>
+                                <p class="mb-4">Haladó algoritmikus problémamegoldás, komplex adatszerkezetek, diákolimpiai válogatóversenyre való felkészítés.</p>
+                                
+                                <p class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-2">Elvárt előismeretek:</p>
+                                <p class="mb-4">Kajmán szintje, mélységi és szélességi gráfbejárás, Dijkstra algoritmus, dinamikus programozás, bináris keresés, két mutató technika.</p>
+                                
+                                <p class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-2">Főbb témák:</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full text-sm">szegmensfa</span>
+                                    <span class="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full text-sm">szófa (trie)</span>
+                                    <span class="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full text-sm">geometriai algoritmusok</span>
+                                    <span class="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full text-sm">konvex burok</span>
+                                    <span class="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full text-sm">moduláris aritmetika</span>
+                                    <span class="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 px-3 py-1 rounded-full text-sm">gráfok elvágó pontok</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lg:w-1/3">
+                            <div class="bg-orange-50 dark:bg-orange-900/20 p-4 rounded border border-orange-200 dark:border-orange-700">
+                                <p class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-2">Órák:</p>
+                                <div class="space-y-1">
+                                    <p class="text-orange-800 dark:text-orange-200">📅 Hétfő 16:30–18:30</p>
+                                    <p class="text-orange-800 dark:text-orange-200">📅 Szerda 16:30–18:30</p>
+                                    <p class="text-orange-800 dark:text-orange-200">📅 Csütörtök 16:30–18:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tigris csoport -->
+                <div class="bg-base-200 p-8 rounded-lg border-l-4 border-red-500">
+                    <div class="flex flex-col lg:flex-row items-start gap-6">
+                        <div class="lg:w-2/3 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2 bg-red-100 dark:bg-red-900/30 rounded">
+                                    <i class="fas fa-code text-xl text-red-600 dark:text-red-400"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-red-700 dark:text-red-300">Tigris csoport – Nemzetközi olimpiák</h3>
+                            </div>
+                            
+                            <div class="bg-base-100 p-4 rounded">
+                                <p class="text-lg font-semibold text-red-700 dark:text-red-300 mb-2">Cél:</p>
+                                <p class="mb-4">Nemzetközi olimpiai feladatok, egyetemi tananyagot is meghaladó témák, legerősebb szint.</p>
+                                
+                                <p class="text-lg font-semibold text-red-700 dark:text-red-300 mb-2">Elvárt előismeretek:</p>
+                                <p class="mb-4">Sas szintje – szegmensfa, geometriai algoritmusok, moduláris aritmetika, erősen összefüggő komponensek, LCA (lowest common ancestor).</p>
+                                
+                                <p class="text-lg font-semibold text-red-700 dark:text-red-300 mb-2">Ajánlott:</p>
+                                <p class="mb-4">Az előző év CEOI válogatóversenyének első 25 helyezettje számára.</p>
+                                
+                                <p class="text-lg font-semibold text-red-700 dark:text-red-300 mb-2">Témák:</p>
+                                <div class="flex flex-wrap gap-2 mb-4">
+                                    <span class="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm">olimpiai feladatok</span>
+                                    <span class="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm">DP optimalizációk</span>
+                                    <span class="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm">maximális párosítás</span>
+                                    <span class="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm">hálózati folyamok</span>
+                                    <span class="bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-200 px-3 py-1 rounded-full text-sm">gyökös felbontás</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="lg:w-1/3">
+                            <div class="bg-red-50 dark:bg-red-900/20 p-4 rounded border border-red-200 dark:border-red-700">
+                                <p class="text-lg font-semibold text-red-700 dark:text-red-300 mb-2">Órák:</p>
+                                <div class="space-y-1">
+                                    <p class="text-red-800 dark:text-red-200">📅 Kedd 16:30–18:30</p>
+                                    <p class="text-red-800 dark:text-red-200">📅 Szerda 16:30–18:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Jelentkezés -->
+        <section class="py-16 lg:py-20 bg-base-100">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12 lg:mb-16">
+                    <div class="inline-block p-3 bg-primary/10 rounded-lg mb-6">
+                        <i class="fas fa-paper-plane text-3xl text-primary"></i>
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">Csatlakozz a C++ szakkörökhez</h2>
+                    <p class="text-lg text-base-content/70 max-w-2xl mx-auto">
+                        Válaszd az algoritmikus programozás izgalmas világát, és fejleszd gondolkodásodat velünk.
+                    </p>
+                </div>
+                
+                <div class="max-w-5xl mx-auto">
+                    <div class="bg-base-200 p-6 rounded-lg border border-base-300 dark:border-base-content/10 mb-8">
+                        <div class="flex items-center gap-4 mb-4">
+                            <i class="fas fa-info-circle text-2xl text-info"></i>
+                            <h3 class="text-xl font-semibold">Rugalmas szintváltás</h3>
+                        </div>
+                        <p class="text-lg text-base-content/70 mb-4">
+                            A szintek <strong>rugalmasan válthatók</strong>, így mindig a tudásodnak és fejlődési ütemednek megfelelő csoportban dolgozhatsz.
+                        </p>
+                        <p class="text-lg text-base-content/70">
+                            Ha bármilyen kérdésed lenne a szintekről, örömmel válaszolunk!
+                        </p>
+                    </div>
+                    
+                    <div class="text-center space-y-6">
+                        <a href="https://forms.gle/Bac1F2kRzMzP3dvJ8" 
+                           target="_blank"
+                           class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 text-lg rounded-lg hover:bg-primary/90 transition-colors font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                            <i class="fas fa-rocket"></i>
+                            Jelentkezés most
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                        <div class="text-base-content/60 text-sm">
+                            <i class="fas fa-lock mr-2"></i>
+                            Biztonságos Google űrlap
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-base-300 p-8">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="../assets/algo_pro_logo_wobg.png" alt="algo pro logo" class="w-[40px] h-[40px]">
+                    <div>
+                        <div class="font-semibold">Algo Pro Club</div>
+                        <div class="text-sm opacity-70">C++ szakkörök</div>
+                    </div>
+                </div>
+                <div class="text-center text-sm opacity-70">
+                    <p>Copyright © 2025 - All rights reserved | <a href="/content/adatvedelmi_tajekoztato.pdf" target="_blank" class="hover:underline">Adatvédelmi tájékoztató</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-change-toggle');
+            const darkBtn = themeToggle.querySelector('[data-set-theme="dark"]');
+            const lightBtn = themeToggle.querySelector('[data-set-theme="light"]');
+            
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            
+            darkBtn.addEventListener('click', () => {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            });
+            
+            lightBtn.addEventListener('click', () => {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

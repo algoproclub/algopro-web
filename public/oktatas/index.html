@@ -30,6 +30,8 @@
 
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#111827">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -44,28 +46,51 @@
 
 <body class="bg-base-100 font-sans text-base-content">
 
-    <header class="navbar bg-base-200 z-[100]">
-    <div class="navbar-start">
-      <img src="../assets/algo_pro_logo_wobg.png" alt="logo" class="w-[40px] h-[40px]">
-    </div>
+    <header class="navbar bg-base-200 z-[100] sticky top-0 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown lg:hidden">
+                <label tabindex="0" class="btn btn-ghost">
+                    <i class="fas fa-bars text-xl"></i>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                    <li><a href="/">Főoldal</a></li>
+                    <li><a href="/oktatas">Oktatás</a></li>
+                    <li><a href="/kodkaland">Kódkaland</a></li>
+                </ul>
+            </div>
+            <a href="/" class="flex items-center gap-2">
+                <img src="../assets/algo_pro_logo_wobg.png" alt="logo" class="w-[40px] h-[40px]">
+            </a>
+        </div>
 
-    <div class="navbar-center">
-      <h1><a class="btn btn-ghost normal-case text-xl" href="#top">Oktatási módszertan és képzési rendszer</a></h1>
-    </div>
+        <div class="navbar-center">
+            <h1><a class="btn btn-ghost normal-case text-lg" href="/">Algo Pro Club</a></h1>
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-sm">
+                    <li><a href="/oktatas" class="font-medium">Oktatás</a></li>
+                    <li><a href="/kodkaland" class="font-medium">Kódkaland</a></li>
+                </ul>
+            </div>
+        </div>
 
-    <div class="navbar-end">
-      <a class="btn btn-primary hidden lg:inline-flex mr-3" target="_blank"
-        href="https://forms.gle/Bac1F2kRzMzP3dvJ8">Jelentkezz Most</a>
-      <div id="theme-change-toggle">
-        <button data-set-theme="dark" class="btn bth-ghost">
-          <i class="fa-solid fa-moon fa-fw fill-current text-base p-100"></i>
-        </button>
-        <button data-set-theme="light" class="btn bth-ghost">
-          <i class="fa-solid fa-sun fa-fw fill-current text-base p-100"></i>
-        </button>
-      </div>
-    </div>
-  </header>
+        <div class="navbar-end">
+            <a class="btn btn-primary btn-sm mr-3" href="https://forms.gle/Bac1F2kRzMzP3dvJ8" target="_blank">
+                <i class="fas fa-rocket text-xs"></i>
+                Jelentkezz Most
+            </a>
+            <a href="../en.html" class="mx-2" title="English version">
+                <img src="../assets/united-states.png" alt="English" class="w-[32px] h-[32px]">
+            </a>
+            <div id="theme-change-toggle">
+                <button data-set-theme="dark" class="btn btn-ghost btn-sm">
+                    <i class="fa-solid fa-moon fa-fw"></i>
+                </button>
+                <button data-set-theme="light" class="btn btn-ghost btn-sm">
+                    <i class="fa-solid fa-sun fa-fw"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero min-h-[75vh] text-primary-content bg-cover bg-center bg-[url('assets/taborrol.jpg')]">
@@ -83,104 +108,418 @@
 
         <!-- Section: Kiknek szól  -->
         <section class="mb-12 md:mb-20 scroll-mt-20" id="kiknek">
-            <div
-                class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
-                <div class="w-full">
-                    <h2 class="text-3xl font-bold mb-4 text-primary">Kiknek szól?</h2>
-                    <p>10–18 éves diákoknak kínálunk kurzusokat – a teljesen kezdő szinttől egészen a nemzetközi versenyekre való felkészítésig. Így minden felső tagozatos és középiskolás megtalálhatja a számára megfelelő szintet, és a saját tempójában tud fejlődni.</p>
-                    <p>Semmilyen előképzettség nem szükséges, de a szakkörök hosszú távon azoknak ideálisak, akik szeretik a matematikát, logikai feladatokat és a gondolkodva tanulást.</p>
-        
+            <div class="flex flex-col lg:flex-row items-center gap-8 md:gap-12 bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="lg:w-2/3 space-y-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-2 bg-primary/20 rounded">
+                            <i class="fas fa-users text-xl text-primary"></i>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-primary">Kiknek szól?</h2>
+                    </div>
+                    
+                    <div class="bg-base-100 p-6 rounded border-l-4 border-primary">
+                        <p class="text-lg mb-4">
+                            <strong class="text-primary">10–18 éves diákoknak</strong> kínálunk kurzusokat – a teljesen kezdő szinttől egészen a nemzetközi versenyekre való felkészítésig. Így minden felső tagozatos és középiskolás megtalálhatja a számára megfelelő szintet, és a saját tempójában tud fejlődni.
+                        </p>
+                        <p class="text-lg">
+                            Semmilyen előképzettség nem szükséges, de a szakkörök hosszú távon azoknak ideálisak, akik szeretik a <span class="font-semibold text-secondary">matematikát</span>, <span class="font-semibold text-secondary">logikai feladatokat</span> és a <span class="font-semibold text-secondary">gondolkodva tanulást</span>.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="bg-base-100 p-4 rounded text-center border">
+                            <div class="text-2xl font-bold text-primary">10-18</div>
+                            <div class="text-sm opacity-70">éves korig</div>
+                        </div>
+                        <div class="bg-base-100 p-4 rounded text-center border">
+                            <div class="text-2xl font-bold text-secondary">Kezdő</div>
+                            <div class="text-sm opacity-70">szinttől</div>
+                        </div>
+                        <div class="bg-base-100 p-4 rounded text-center border">
+                            <div class="text-2xl font-bold text-accent">Verseny</div>
+                            <div class="text-sm opacity-70">szintig</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/3 flex justify-center">
+                    <div class="w-48 h-48 bg-primary/10 rounded-lg flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-graduation-cap text-5xl text-primary mb-4"></i>
+                            <div class="text-sm font-medium">Diákok minden szintről</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section: Online szakkörök -->
         <section class="mb-12 md:mb-20 scroll-mt-20" id="online-platform">
-            <div
-                class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
-                <div class="w-full">
-                    <h2 class="text-3xl font-bold mb-4 text-secondary">Online szakkörök – saját oktatási platform</h2>
-                        <p>Szakköreink online zajlanak, így földrajzi helytől függetlenül bárki csatlakozhat. Hasonló tudásszintű diákok az ország (és akár a világ) különböző pontjairól tanulhatnak együtt egy támogató, barátságos közösségben.</p>
-                        <p>Tanulóink számára saját fejlesztésű online oktatási platformot biztosítunk, amelyhez gondosan kialakított feladatsorok kapcsolódnak. A rendszer segíti a fokozatos tanulást, a közös, egymást segítő munkát és szorosan illeszkedik a módszertanunkhoz. Pontos képet kapunk a haladásról az óra közben és órák között is.</p>
-                        <p>👉 <a href="https://www.youtube.com/watch?v=CYvc4Hu5-Yk" class="link link-primary" target="_blank" rel="noopener noreferrer">Rövid bemutató videó a platformról</a></p>
+            <div class="flex flex-col lg:flex-row-reverse items-center gap-8 md:gap-12 bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="lg:w-2/3 space-y-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-2 bg-secondary/20 rounded">
+                            <i class="fas fa-laptop-code text-xl text-secondary"></i>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-secondary">Online szakkörök – saját oktatási platform</h2>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-base-100 p-6 rounded border-l-4 border-secondary">
+                            <p class="text-lg">
+                                Szakköreink <strong class="text-secondary">online zajlanak</strong>, így földrajzi helytől függetlenül bárki csatlakozhat. Hasonló tudásszintű diákok az ország (és akár a világ) különböző pontjairól tanulhatnak együtt egy támogató, barátságos közösségben.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded border-l-4 border-info">
+                            <p class="text-lg">
+                                Tanulóink számára <strong class="text-info">saját fejlesztésű online oktatási platformot</strong> biztosítunk, amelyhez gondosan kialakított feladatsorok kapcsolódnak. A rendszer segíti a fokozatos tanulást, a közös, egymást segítő munkát és szorosan illeszkedik a módszertanunkhoz.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded border">
+                            <div class="flex items-center gap-3">
+                                <i class="fab fa-youtube text-2xl text-blue-600"></i>
+                                <div>
+                                    <strong class="text-lg">Bemutató videó:</strong>
+                                    <br>
+                                    <a href="https://www.youtube.com/watch?v=CYvc4Hu5-Yk" 
+                                       class="text-lg font-medium text-blue-600 hover:text-blue-700 underline" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer">
+                                        Rövid bemutató videó a platformról →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/3 flex justify-center">
+                    <div class="w-48 h-48 bg-secondary/10 rounded-lg flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-globe text-5xl text-secondary mb-4"></i>
+                            <div class="text-sm font-medium">Online közösség</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section: Kurzusaink felépítése -->
         <section class="mb-12 md:mb-20 scroll-mt-20" id="felepites">
-            <div
-                class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
-                <div class="md:w-full">
-                    <h2 class="text-3xl font-bold mb-4 text-accent">Kurzusaink felépítése</h2>
-                    <ul class="list-disc list-inside space-y-1">
-                        <li>Minden kurzus alapvetően egy tanévre szól.</li>
-                        <li>Hetente 90–120 perces foglalkozás van, általában hétköznap délután. Az aktuális beosztás az egyes szakkörök oldalain található.</li>
-                        <li>Az órákat a hét több napján is megtartjuk, így rugalmasan minden héten eldönthető, melyik alkalom a legmegfelelőbb. Hiányzás esetén felvételek segítik a pótlást.</li>
-                        <li>Egy foglalkozáson jellemzően 10–15 diák tanul együtt egy tanárral és egy segítővel.</li>
-                        <li>A feladatmegoldás alatt 2–3 fős kis csoportokban dolgoznak, így mindenkire jut figyelem és beszélgetés.</li>
-                        <li>A tanulás a <em>cselekedve tanulás</em> elvén alapul: először önálló próbálkozás, majd segítéssel történő fejlesztés.</li>
-                    </ul>
+            <div class="bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-2 bg-accent/20 rounded">
+                        <i class="fas fa-building text-xl text-accent"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-accent">Kurzusaink felépítése</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-primary/20 rounded">
+                                <i class="fas fa-calendar-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Időtartam és ütemezés</h3>
+                                <p class="opacity-80">Minden kurzus alapvetően egy tanévre szól, hetente 90–120 perces foglalkozással.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-secondary/20 rounded">
+                                <i class="fas fa-clock text-secondary"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Rugalmas részvétel</h3>
+                                <p class="opacity-80">Az órákat a hét több napján is megtartjuk, így rugalmasan választható az alkalom.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-info/20 rounded">
+                                <i class="fas fa-users text-info"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Csoportméret</h3>
+                                <p class="opacity-80">Egy foglalkozáson 10–15 diák tanul együtt egy tanárral és segítővel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-success/20 rounded">
+                                <i class="fas fa-user-friends text-success"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Kis csoportos munka</h3>
+                                <p class="opacity-80">2–3 fős kis csoportokban dolgoznak, így mindenkire jut figyelem.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-warning/20 rounded">
+                                <i class="fas fa-lightbulb text-warning"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Cselekedve tanulás</h3>
+                                <p class="opacity-80">Először önálló próbálkozás, majd segítéssel történő fejlesztés.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-accent/20 rounded">
+                                <i class="fas fa-video text-accent"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-2">Felvételek</h3>
+                                <p class="opacity-80">Hiányzás esetén felvételek segítik a pótlást.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section: Helyszín -->
         <section class="mb-12 md:mb-20 scroll-mt-20" id="kurzusok">
-            <div
-                class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
-                <div class="w-full">
-                    <h2 class="text-3xl font-bold mb-4 text-info">Tanulási útvonalak</h2>
-                    <p>A programozás-oktatás struktúránk rugalmas és sokszínű, így minden informatika iránt érdeklődő, motivált diáknak biztosítani tudjuk a fejlődési lehetőséget.</p>
-                    <p>Tananyagunk tudatosan megtervezett, jól struktúrált és módszeresen felépített. A részletes didaktikai háttérről Nikházy László doktori disszertációja ad bővebb képet: <a href="https://algopro.hu/content/disszertacio_NL.pdf" class="link link-primary" target="_blank" rel="noopener noreferrer">PDF letöltése</a>.</p>
-                    <p>Az alábbi ábra mutatja az általunk javasolt tanulási útvonalakat. A vastagabb nyilak a fő irányokat jelölik, míg a vékonyabbak a lehetséges átmeneteket – hiszen minden tanuló útja egyedi lehet.</p>
+            <div class="flex flex-col lg:flex-row-reverse items-start gap-8 md:gap-12 bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="lg:w-2/5 space-y-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-2 bg-info/20 rounded">
+                            <i class="fas fa-route text-xl text-info"></i>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-info">Tanulási útvonalak</h2>
+                    </div>
+                    
+                    <div class="bg-base-100 p-6 rounded border-l-4 border-info">
+                        <p class="text-lg mb-4">
+                            A programozás-oktatás struktúránk <strong class="text-info">rugalmas és sokszínű</strong>, így minden informatika iránt érdeklődő, motivált diáknak biztosítani tudjuk a fejlődési lehetőséget.
+                        </p>
+                        <p class="text-lg">
+                            Tananyagunk tudatosan megtervezett, jól struktúrált és módszeresen felépített. A részletes didaktikai háttérről Nikházy László doktori disszertációja ad bővebb képet.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-base-100 p-6 rounded border">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-file-pdf text-2xl text-blue-600"></i>
+                            <div>
+                                <strong class="text-lg">Tudományos háttér:</strong>
+                                <br>
+                                <a href="https://algopro.hu/content/disszertacio_NL.pdf" 
+                                   class="text-lg font-medium text-blue-600 hover:text-blue-700 underline" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer">
+                                    Doktori disszertáció letöltése (PDF) →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-full">
-                    <img src="assets/algopro_kurzusok.png" alt="Kurzusok gráfja"
-                        class="rounded-lg shadow-md w-full h-auto object-cover aspect-video">
+                
+                <div class="lg:w-3/5">
+                    <div class="relative">
+                        <img src="assets/algopro_kurzusok.png" 
+                             alt="Kurzusok tanulási útvonalainak gráfja"
+                             class="rounded-lg w-full h-auto border">
+                        <div class="absolute -bottom-3 -right-3 bg-info text-white px-3 py-1 rounded text-sm font-medium">
+                            <i class="fas fa-map mr-1"></i>
+                            Tanulási térkép
+                        </div>
+                    </div>
+                    
+                    <!-- Leírás az ábra alatt, de még mindig a jobb oszlopban -->
+                    <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded border border-blue-200 dark:border-blue-700 mt-6">
+                        <p class="text-sm text-blue-800 dark:text-blue-200">
+                            <i class="fas fa-info-circle text-blue-600 dark:text-blue-400 mr-2"></i>
+                            Az alábbi ábra mutatja az általunk javasolt tanulási útvonalakat. A <strong>vastagabb nyilak</strong> a fő irányokat jelölik, míg a <strong>vékonyabbak</strong> a lehetséges átmeneteket – hiszen minden tanuló útja egyedi lehet.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section: Szakkörök -->
         <section class="mb-12 md:mb-20 scroll-mt-20" id="szakkorok">
-            <div
-                class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
-                <div class="w-full">
-                    <h2 class="text-3xl font-bold mb-4 text-success">További információk a szakkörökről:</h2>
-                    <ul class="list-disc list-inside space-y-1">
-                        <li><a href="#" class="link link-primary">C++ szakkörök</a></li>
-                        <li><a href="#" class="link link-primary">Python szakkörök</a></li>
-                        <li><a href="#" class="link link-primary">Hacker szakkör</a></li>
-                        <li><a href="#" class="link link-primary">AI szakkör</a></li>
-                    </ul>
+            <div class="bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-2 bg-success/20 rounded">
+                        <i class="fas fa-list-ul text-xl text-success"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-success">További információk a szakkörökről:</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="/oktatas/cpp.html" class="group bg-base-100 p-6 rounded border hover:border-blue-400 dark:hover:border-blue-500 flex items-center gap-4 transition-colors">
+                        <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded">
+                            <i class="fas fa-code text-xl text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300">C++ szakkörök</h3>
+                            <p class="text-sm opacity-70">Algoritmusok és adatszerkezetek</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
+                    </a>
+                    
+                    <a href="/oktatas/python.html" class="group bg-base-100 p-6 rounded border hover:border-green-400 dark:hover:border-green-500 flex items-center gap-4 transition-colors">
+                        <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded">
+                            <i class="fab fa-python text-xl text-green-600 dark:text-green-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-green-700 dark:text-green-300">Python szakkörök</h3>
+                            <p class="text-sm opacity-70">Programozási alapok</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-green-600 dark:text-green-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
+                    </a>
+                    
+                    <a href="/oktatas/hacker.html" class="group bg-base-100 p-6 rounded border hover:border-purple-400 dark:hover:border-purple-500 flex items-center gap-4 transition-colors">
+                        <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded">
+                            <i class="fas fa-shield-alt text-xl text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-purple-700 dark:text-purple-300">Hacker szakkör</h3>
+                            <p class="text-sm opacity-70">Kiberbiztonsági ismeretek</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-purple-600 dark:text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
+                    </a>
+                    
+                    <a href="/oktatas/ai.html" class="group bg-base-100 p-6 rounded border hover:border-orange-400 dark:hover:border-orange-500 flex items-center gap-4 transition-colors">
+                        <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded">
+                            <i class="fas fa-brain text-xl text-orange-600 dark:text-orange-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300">AI szakkör</h3>
+                            <p class="text-sm opacity-70">Mesterséges intelligencia</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-orange-600 dark:text-orange-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Section: Lezárás -->
         <section class="mb-12 md:mb-20 scroll-mt-20" id="lezaras">
-            <div
-                class="flex flex-col md:flex-row items-center gap-8 md:gap-12 bg-base-200 p-6 md:p-10 rounded-lg shadow-lg">
-                <div class="w-full">
-                    <h2 class="text-3xl font-bold mb-4 text-success">Rugalmas rendszer, egyéni utak</h2>
-                    <p>Célunk, hogy minden 10–18 éves diák megtalálja a saját útját a programozásban: legyen szó első lépésekről, magabiztos tudás megszerzéséről, vagy akár nemzetközi versenyekre való felkészülésről. Oktatási rendszerünk rugalmasan követi az egyéni fejlődési ütemet, és lehetőséget ad arra, hogy mindenki a számára leginspirálóbb irányban haladhasson tovább.</p>
+            <div class="flex flex-col lg:flex-row items-center gap-8 md:gap-12 bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="lg:w-2/3 space-y-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-2 bg-success/20 rounded">
+                            <i class="fas fa-puzzle-piece text-xl text-success"></i>
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-success">Rugalmas rendszer, egyéni utak</h2>
+                    </div>
+                    
+                    <div class="bg-base-100 p-6 rounded border-l-4 border-success">
+                        <p class="text-lg">
+                            Célunk, hogy minden <strong class="text-primary">10–18 éves diák</strong> megtalálja a saját útját a programozásban: legyen szó <span class="font-semibold text-secondary">első lépésekről</span>, <span class="font-semibold text-accent">magabiztos tudás megszerzéséről</span>, vagy akár <span class="font-semibold text-success">nemzetközi versenyekre való felkészülésről</span>.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-base-100 p-6 rounded border">
+                        <p class="text-lg">
+                            Oktatási rendszerünk <strong class="text-success">rugalmasan követi</strong> az egyéni fejlődési ütemet, és lehetőséget ad arra, hogy mindenki a számára leginspirálóbb irányban haladhasson tovább.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/3 flex justify-center">
+                    <div class="w-48 h-48 bg-success/10 rounded-lg flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-route text-5xl text-success mb-4"></i>
+                            <div class="text-sm font-medium">Egyéni fejlődési utak</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section: Jelentkezés -->
-        <section
-            class="text-center py-10 md:py-16 bg-gradient-to-r from-blue-800 to-green-800 rounded-lg shadow-xl scroll-mt-20"
-            id="jelentkezes">
-            <div class="max-w-2xl mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Jelentkezés</h2>
-                <p class="mb-4 text-lg text-blue-100">Jelentkezni az alábbi gombra kattintva elérhető űrlap kitöltésével
-                    lehet.</p>
-                <p class="mb-4 text-lg text-blue-100">📅 <b>Jelentkezési határidő nincs, bármikor lehet kapcsolódni.</b></p>
-                <p class="mb-4 text-lg text-blue-100">A kurzusaink szeptember közepén, illetve februárban indulnak, így szeptember elején vagy január végén ideális jelentkezni.</p>
-                <p class="mb-6 text-lg text-blue-100">Ha bármilyen kérdésük lenne, örömmel válaszolunk!</p>
-                <a href="https://forms.gle/Bac1F2kRzMzP3dvJ8" class="btn btn-accent btn-lg transition hover:scale-105 duration-300">Jelentkezés</a>
+        <section class="py-16 lg:py-20 bg-base-100 scroll-mt-20" id="jelentkezes">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12 lg:mb-16">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+                        Csatlakozz hozzánk!
+                    </h2>
+                    <p class="text-lg text-base-content/70 max-w-2xl mx-auto">
+                        Válaszd az algoritmikus programozás izgalmas világát, és fejleszd gondolkodásodat velünk.
+                    </p>
+                </div>
+                
+                <div class="max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
+                        <div class="bg-base-200 p-6 rounded-lg border border-base-300 dark:border-base-content/10">
+                            <div class="p-3 bg-primary/10 rounded-lg mb-4 w-fit">
+                                <i class="fas fa-user-plus text-2xl text-primary"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Egyszerű jelentkezés</h3>
+                            <p class="text-base-content/70">
+                                Töltsd ki az egyszerű űrlapot, és emailben felvesszük veled a kapcsolatot.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-base-200 p-6 rounded-lg border border-base-300 dark:border-base-content/10">
+                            <div class="p-3 bg-secondary/10 rounded-lg mb-4 w-fit">
+                                <i class="fas fa-calendar-check text-2xl text-secondary"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Rugalmas tagság</h3>
+                            <p class="text-base-content/70">
+                                Havi tagdíj 1000 Ft-tal osztható összeg - te döntöd el az értéket.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-base-200 p-6 rounded-lg border border-base-300 dark:border-base-content/10">
+                            <div class="p-3 bg-accent/10 rounded-lg mb-4 w-fit">
+                                <i class="fas fa-star text-2xl text-accent"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3">Minden esemény</h3>
+                            <p class="text-base-content/70">
+                                A tagdíj minden foglalkozásunkra és eseményünkre érvényes.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-base-200 p-6 rounded-lg border border-base-300 dark:border-base-content/10 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="p-3 bg-info/10 rounded-lg">
+                                <i class="fas fa-info-circle text-2xl text-info"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">Mikor érdemes jelentkezni?</h3>
+                                <p class="text-base-content/70 mb-3">
+                                    A kurzusaink <strong>szeptember közepén</strong> és <strong>februárban</strong> indulnak, így <strong>szeptember elején</strong> vagy <strong>január végén</strong> ideális jelentkezni.
+                                </p>
+                                <p class="text-base-content/70">
+                                    <strong>Jelentkezési határidő nincs</strong> - bármikor lehet kapcsolódni. Ha bármilyen kérdésük lenne, örömmel válaszolunk!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center space-y-6">
+                        <a href="https://forms.gle/Bac1F2kRzMzP3dvJ8" 
+                           target="_blank" 
+                           class="inline-flex items-center gap-3 bg-primary text-white px-8 py-4 text-lg rounded-lg hover:bg-primary/90 transition-colors font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                            <i class="fas fa-rocket"></i>
+                            Jelentkezz Most
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                        
+                        <div class="pt-4 border-t border-base-300 dark:border-base-content/10">
+                            <p class="text-base-content/60 mb-2">
+                                <i class="fas fa-users mr-2"></i>
+                                Szeretnél a szervezőcsapathoz csatlakozni?
+                            </p>
+                            <a href="mailto:info@algopro.hu" 
+                               class="text-info hover:text-info/80 font-medium inline-flex items-center gap-2">
+                                <i class="fas fa-envelope text-sm"></i>
+                                info@algopro.hu
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -200,6 +539,73 @@
             </div>
         </nav>
     </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-change-toggle');
+        const darkButton = themeToggle.querySelector('[data-set-theme="dark"]');
+        const lightButton = themeToggle.querySelector('[data-set-theme="light"]');
+        
+        // Set theme
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            
+            if (theme === 'dark') {
+                darkButton.style.display = 'none';
+                lightButton.style.display = 'block';
+            } else {
+                darkButton.style.display = 'block';
+                lightButton.style.display = 'none';
+            }
+        }
+        
+        // Initialize theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        setTheme(savedTheme);
+        
+        // Theme toggle event listeners
+        darkButton.addEventListener('click', () => setTheme('dark'));
+        lightButton.addEventListener('click', () => setTheme('light'));
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(section);
+        });
+    </script>
 
 </body>
 
