@@ -90,13 +90,72 @@
             <div class="max-w-4xl bg-black/70 p-8 md:p-10 rounded-lg shadow-2xl backdrop-blur-sm">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg text-white italic">Programozást tanítunk – gondolkodni tanítunk.</h1>
                 <p class="mt-6 text-lg md:text-2xl text-white font-medium drop-shadow-lg">Az Algo Pro Clubban a programozást aktív problémamegoldáson keresztül tanítjuk. Hiszünk a <em>cselekedve tanulás</em> elvében: mindenki először önállóan próbálkozik a feladatok megoldásával, majd közösen, kis csoportokban, szükség esetén tanári segítséggel fejlesztjük tovább a gondolatokat.</p>
-                <a href="#kiknek" class="btn btn-accent btn-lg mt-8 shadow-lg">Tudj meg többet</a>
+                <a href="#szakkorok" class="btn btn-accent btn-lg mt-8 shadow-lg">Tudj meg többet</a>
             </div>
         </div>
     </section>
 
     <!-- Main Content Sections -->
     <main class="container mx-auto px-4 py-12 md:py-20">
+
+        <!-- Section: Szakkörök -->
+        <section class="mb-12 md:mb-20 scroll-mt-20" id="szakkorok">
+            <div class="bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-2 bg-accent/20 rounded">
+                        <i class="fas fa-list-ul text-xl text-accent"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-accent">Szakköreink</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="/oktatas/cpp.html" class="group bg-base-100 p-6 rounded border hover:border-blue-400 dark:hover:border-blue-500 flex items-center gap-4 transition-colors">
+                        <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded">
+                            <i class="fas fa-code text-xl text-blue-600 dark:text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300">C++ szakkörök</h3>
+                            <p class="text-sm opacity-70">Algoritmikus programozás teljesen kezdőtől olimpiai szintig</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
+                    </a>
+                    
+                    <a href="/oktatas/python.html" class="group bg-base-100 p-6 rounded border hover:border-green-400 dark:hover:border-green-500 flex items-center gap-4 transition-colors">
+                        <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded">
+                            <i class="fab fa-python text-xl text-green-600 dark:text-green-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-green-700 dark:text-green-300">Python szakkörök</h3>
+                            <p class="text-sm opacity-70">Programozási alapok problémamegoldáson keresztül</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-green-600 dark:text-green-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
+                    </a>
+                    
+                    <a href="/oktatas/hacker.html" class="group bg-base-100 p-6 rounded border hover:border-purple-400 dark:hover:border-purple-500 flex items-center gap-4 transition-colors">
+                        <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded">
+                            <i class="fas fa-shield-alt text-xl text-purple-600 dark:text-purple-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-purple-700 dark:text-purple-300">Hacker szakkör</h3>
+                            <p class="text-sm opacity-70">Szoftverbiztonsági ismeretek, lehetséges hibák a programok mélyén</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-purple-600 dark:text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
+                    </a>
+                    
+                    <a href="/oktatas/ai.html" class="group bg-base-100 p-6 rounded border hover:border-orange-400 dark:hover:border-orange-500 flex items-center gap-4 transition-colors">
+                        <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded">
+                            <i class="fas fa-brain text-xl text-orange-600 dark:text-orange-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300">AI szakkör</h3>
+                            <p class="text-sm opacity-70">Mesterséges intelligencia elméleti háttér és gyakorlati programozás</p>
+                        </div>
+                        <i class="fas fa-arrow-right text-orange-600 dark:text-orange-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Section: Kiknek szól  -->
         <section class="mb-12 md:mb-20 scroll-mt-20" id="kiknek">
@@ -327,71 +386,13 @@
                     <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded border border-blue-200 dark:border-blue-700 mt-6">
                         <p class="text-sm text-blue-800 dark:text-blue-200">
                             <i class="fas fa-info-circle text-blue-600 dark:text-blue-400 mr-2"></i>
-                            A fenti ábra mutatja az általunk javasolt tanulási útvonalakat. A <strong>vastagabb nyilak</strong> a fő irányokat jelölik, míg a <strong>vékonyabbak</strong> a lehetséges átmeneteket – hiszen minden tanuló útja egyedi lehet.
+                            A fenti ábra mutatja az általunk javasolt tanulási útvonalakat. A <strong>vastag nyilak</strong> a fő irányokat, előfeltételeket jelölik, a <strong>vékony</strong> nyilak az ajánlott átjárásokat, a pontozott</strong> nyilak a lehetséges átmeneteket – hiszen <strong>minden tanuló útja egyedi</strong> lehet. Ettől el lehet térni, nálunk mindenki maga választhatja meg a csoportját.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- Section: Szakkörök -->
-        <section class="mb-12 md:mb-20 scroll-mt-20" id="szakkorok">
-            <div class="bg-base-200 p-8 md:p-10 rounded-lg">
-                <div class="flex items-center gap-3 mb-8">
-                    <div class="p-2 bg-warning/20 rounded">
-                        <i class="fas fa-list-ul text-xl text-warning"></i>
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-warning">További információk a szakkörökről:</h2>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <a href="/oktatas/cpp.html" class="group bg-base-100 p-6 rounded border hover:border-blue-400 dark:hover:border-blue-500 flex items-center gap-4 transition-colors">
-                        <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded">
-                            <i class="fas fa-code text-xl text-blue-600 dark:text-blue-400"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300">C++ szakkörök</h3>
-                            <p class="text-sm opacity-70">Algoritmikus programozás teljesen kezdőtől olimpiai szintig</p>
-                        </div>
-                        <i class="fas fa-arrow-right text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
-                    </a>
-                    
-                    <a href="/oktatas/python.html" class="group bg-base-100 p-6 rounded border hover:border-green-400 dark:hover:border-green-500 flex items-center gap-4 transition-colors">
-                        <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded">
-                            <i class="fab fa-python text-xl text-green-600 dark:text-green-400"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-green-700 dark:text-green-300">Python szakkörök</h3>
-                            <p class="text-sm opacity-70">Programozási alapok problémamegoldáson keresztül</p>
-                        </div>
-                        <i class="fas fa-arrow-right text-green-600 dark:text-green-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
-                    </a>
-                    
-                    <a href="/oktatas/hacker.html" class="group bg-base-100 p-6 rounded border hover:border-purple-400 dark:hover:border-purple-500 flex items-center gap-4 transition-colors">
-                        <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded">
-                            <i class="fas fa-shield-alt text-xl text-purple-600 dark:text-purple-400"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-purple-700 dark:text-purple-300">Hacker szakkör</h3>
-                            <p class="text-sm opacity-70">Szoftverbiztonsági ismeretek, lehetséges hibák a programok mélyén</p>
-                        </div>
-                        <i class="fas fa-arrow-right text-purple-600 dark:text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
-                    </a>
-                    
-                    <a href="/oktatas/ai.html" class="group bg-base-100 p-6 rounded border hover:border-orange-400 dark:hover:border-orange-500 flex items-center gap-4 transition-colors">
-                        <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded">
-                            <i class="fas fa-brain text-xl text-orange-600 dark:text-orange-400"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300">AI szakkör</h3>
-                            <p class="text-sm opacity-70">Mesterséges intelligencia elméleti háttér és gyakorlati programozás</p>
-                        </div>
-                        <i class="fas fa-arrow-right text-orange-600 dark:text-orange-400 opacity-0 group-hover:opacity-100 transition-opacity ml-auto"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
 
         <!-- Section: Lezárás -->
         <section class="mb-12 md:mb-20 scroll-mt-20" id="lezaras">
@@ -458,7 +459,7 @@
                             </div>
                             <h3 class="text-xl font-semibold mb-3">Rugalmas tagság</h3>
                             <p class="text-base-content/70">
-                                Havi tagdíj 1000 Ft-tal osztható összeg - te döntöd el az értéket.
+                                Havi 1000 Ft-tal osztható támogatást kérünk az első hónap végétől kezdve - az összeg szabadon választható.
                             </p>
                         </div>
                         
