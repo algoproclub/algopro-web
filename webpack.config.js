@@ -22,6 +22,26 @@ const config = {
             filename: 'index.html',
         }),
         new HtmlWebpackPlugin({
+            template: 'public/oktatas/index.html',
+            filename: 'oktatas/index.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: 'public/oktatas/ai.html',
+            filename: 'oktatas/ai.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: 'public/oktatas/cpp.html',
+            filename: 'oktatas/cpp.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: 'public/oktatas/python.html',
+            filename: 'oktatas/python.html',
+        }),
+        new HtmlWebpackPlugin({
+            template: 'public/oktatas/hacker.html',
+            filename: 'oktatas/hacker.html',
+        }),
+        new HtmlWebpackPlugin({
             template: 'public/kodkaland/index.html',
             filename: 'kodkaland/index.html',
         }),
