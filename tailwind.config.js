@@ -6,7 +6,6 @@ module.exports = {
   content: ['./public/**/*.{html,js,ts}'],
   // daisyUI config (optional - here are the default values)
   daisyui: {
-    // themes: false, // comment this line and uncomment bellow for custom light and dark mode
     themes: [
       {
         dark: {
@@ -19,19 +18,6 @@ module.exports = {
           "success": "#2cc364",
           "warning": "#f3a744",
           "error": "#ea2e6a",
-        },
-      },
-      {
-        light: {
-          "primary": "#055990",
-          "secondary": "#2b8a67",
-          "accent": "#5facbf",
-          "neutral": "#3d223f",
-          "base-100": "#eeecf3",
-          "info": "#83a0f1",
-          "success": "#31c975",
-          "warning": "#f3b853",
-          "error": "#de2b55",
         },
       },
     ],

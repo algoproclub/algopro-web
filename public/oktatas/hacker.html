@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu" data-theme="light">
+<html lang="hu" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -57,14 +57,6 @@
             <a href="../en.html" class="mx-2" title="English version">
                 <img src="../assets/united-states.png" alt="English" class="w-[32px] h-[32px]">
             </a>
-            <div id="theme-change-toggle">
-                <button data-set-theme="dark" class="btn btn-ghost btn-sm">
-                    <i class="fa-solid fa-moon fa-fw"></i>
-                </button>
-                <button data-set-theme="light" class="btn btn-ghost btn-sm">
-                    <i class="fa-solid fa-sun fa-fw"></i>
-                </button>
-            </div>
         </div>
     </header>
 
@@ -416,25 +408,8 @@
     </footer>
 
     <script>
-        // Theme toggle functionality
+        // Dark theme is now default - no theme switching needed
         document.addEventListener('DOMContentLoaded', function() {
-            const themeToggle = document.getElementById('theme-change-toggle');
-            const darkBtn = themeToggle.querySelector('[data-set-theme="dark"]');
-            const lightBtn = themeToggle.querySelector('[data-set-theme="light"]');
-            
-            const currentTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', currentTheme);
-            
-            darkBtn.addEventListener('click', () => {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            });
-            
-            lightBtn.addEventListener('click', () => {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            });
-
             // Smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
