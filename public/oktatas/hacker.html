@@ -73,13 +73,13 @@
                 </p>
                 <div class="flex flex-wrap gap-3 justify-center">
                     <div class="bg-base-200 border border-base-300 dark:border-base-content/10 px-4 py-2 rounded-lg">
-                        <span class="font-medium">System Hacking</span>
+                        <span class="font-medium">Kiberbiztonsági alapok</span>
                     </div>
                     <div class="bg-base-200 border border-base-300 dark:border-base-content/10 px-4 py-2 rounded-lg">
                         <span class="font-medium">CTF kihívások</span>
                     </div>
                     <div class="bg-base-200 border border-base-300 dark:border-base-content/10 px-4 py-2 rounded-lg">
-                        <span class="font-medium">Kiberbiztonsági alapok</span>
+                        <span class="font-medium">System Hacking</span>
                     </div>
                 </div>
             </div>
@@ -189,8 +189,8 @@
                                 <i class="fas fa-shield-alt text-xl text-purple-600 dark:text-purple-400"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">Rendszerek irányítása</h3>
-                                <p class="text-sm opacity-70">Alapvető módszerek a gépi rendszerek megértésére</p>
+                                <h3 class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">Modern védelmi mechanizmusok</h3>
+                                <p class="text-sm opacity-70">Mi nehezíti napjainkban a programhibák kihasználását</p>
                             </div>
                         </div>
                     </div>
@@ -218,12 +218,13 @@
                             </div>
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                
                                 <div class="bg-base-100 p-4 rounded border">
                                     <div class="flex items-center gap-2 mb-3">
-                                        <i class="fas fa-puzzle-piece text-purple-600 dark:text-purple-400"></i>
-                                        <h3 class="font-semibold text-purple-700 dark:text-purple-300">Binary Exploitation</h3>
+                                        <i class="fas fa-lock text-purple-600 dark:text-purple-400"></i>
+                                        <h3 class="font-semibold text-purple-700 dark:text-purple-300">Bug Hunting</h3>
                                     </div>
-                                    <p class="text-sm opacity-70">Buffer overflow és hasonló technikák</p>
+                                    <p class="text-sm opacity-70">A kódban elrejtett hibák keresése</p>
                                 </div>
                                 
                                 <div class="bg-base-100 p-4 rounded border">
@@ -236,11 +237,12 @@
                                 
                                 <div class="bg-base-100 p-4 rounded border">
                                     <div class="flex items-center gap-2 mb-3">
-                                        <i class="fas fa-lock text-purple-600 dark:text-purple-400"></i>
-                                        <h3 class="font-semibold text-purple-700 dark:text-purple-300">Cryptography</h3>
+                                        <i class="fas fa-puzzle-piece text-purple-600 dark:text-purple-400"></i>
+                                        <h3 class="font-semibold text-purple-700 dark:text-purple-300">Binary Exploitation</h3>
                                     </div>
-                                    <p class="text-sm opacity-70">Titkosítási algoritmusok feltörése</p>
+                                    <p class="text-sm opacity-70">Buffer overflow és hasonló technikák</p>
                                 </div>
+                                
                                 
                                 <div class="bg-base-100 p-4 rounded border">
                                     <div class="flex items-center gap-2 mb-3">
@@ -273,57 +275,60 @@
 
         <!-- Section: Előfeltételek -->
         <section class="mb-12 md:mb-20">
+
             <div class="bg-base-200 p-8 md:p-10 rounded-lg">
                 <div class="flex items-center gap-3 mb-8">
                     <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded">
                         <i class="fas fa-list-check text-xl text-purple-600 dark:text-purple-400"></i>
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-purple-700 dark:text-purple-300">Előfeltétel</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-purple-700 dark:text-purple-300">Mit kell tudnod hozzá?</h2>
                 </div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div class="bg-base-100 p-6 rounded border-l-4 border-purple-500">
-                        <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-300 mb-4">Szükséges tudás</h3>
-                        <p class="text-lg leading-relaxed mb-4">
-                            A szakkörhöz <strong class="text-purple-700 dark:text-purple-300">programozási ismeretek szükségesek valamely nyelven</strong>, a <strong>C/C++ előnyt jelent</strong>.
-                        </p>
-                        <div class="flex items-center gap-2">
-                            <i class="fas fa-check-circle text-green-500"></i>
-                            <span class="text-green-700 dark:text-green-300 font-medium">C/C++ programozás (előny)</span>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-base-200 p-6 rounded-lg border border-base-300 dark:border-base-content/10">
-                        <div class="flex items-center gap-3 mb-4">
-                            <i class="fas fa-graduation-cap text-2xl text-success"></i>
-                            <h3 class="text-xl font-bold">Teljesen kezdő vagy?</h3>
-                        </div>
-                        <p class="mb-4 leading-relaxed">
-                            Teljesen kezdő résztvevőknek először a <strong>C++ szakkört (Bagoly)</strong> ajánljuk, ahol a programozás alapjait sajátíthatják el.
-                        </p>
-                        <p class="text-sm text-base-content/70">
-                            Így később könnyebben követheted majd a Hacker szakkör anyagát.
-                        </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    
+                <!-- Szükséges tudás -->
+                <div class="bg-base-100 p-6 rounded border-l-4 border-purple-500 lg:col-span-2">
+                    <p class="text-lg leading-relaxed mb-4">
+                        A szakkörhöz <strong class="text-purple-700 dark:text-purple-300">programozási ismeretek szükségesek valamely nyelven</strong>, a <strong>C/C++ előnyt jelent</strong>.
+                    </p>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-check-circle text-green-500"></i>
+                        <span class="text-green-700 dark:text-green-300 font-medium">C/C++ programozás (előny)</span>
                     </div>
                 </div>
-                
-                <div class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg border border-purple-200 dark:border-purple-700 mt-6">
+
+                <!-- Időpontok -->
+                <div class="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg border border-purple-200 dark:border-purple-700 lg:col-span-1">
                     <div class="flex items-center gap-3 mb-4">
                         <i class="fas fa-clock text-purple-600 dark:text-purple-400"></i>
                         <h3 class="text-xl font-semibold text-purple-700 dark:text-purple-300">Időpontok</h3>
                     </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <p class="text-purple-800 dark:text-purple-200 flex items-center gap-2">
-                            <i class="fas fa-calendar-alt"></i>
-                            Kedd 16:30 – 18:00
-                        </p>
-                        <p class="text-purple-800 dark:text-purple-200 flex items-center gap-2">
-                            <i class="fas fa-calendar-alt"></i>
-                            Péntek 16:30 – 18:00
-                        </p>
+                    <div class="grid grid-cols-1 ">
+                        <div class="space-y-1">
+                            <p class="text-purple-800 dark:text-purple-200"> <i class="fas fa-calendar-alt"></i>
+                            Kedd 16:30 – 18:00</p>
+                            <p class="text-purple-800 dark:text-purple-200"> <i class="fas fa-calendar-alt"></i>
+                            Péntek 16:30 – 18:00</p>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Teljesen kezdő -->
+                <div class="bg-base-200 p-6 rounded-lg border border-base-300 dark:border-base-content/10 lg:col-span-3">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-success"></i>
+                        <h3 class="text-xl font-bold">Teljesen kezdő vagy?</h3>
+                    </div>
+                    <p class="mb-4 leading-relaxed">
+                        Teljesen kezdő résztvevőknek először a <strong>C++ szakkört (Bagoly)</strong> ajánljuk, ahol a programozás alapjait sajátíthatják el.
+                    </p>
+                    <p class="text-sm text-base-content/70">
+                        Így később könnyebben követheted majd a Hacker szakkör anyagát.
+                    </p>
+                </div>
+
             </div>
+
         </section>
 
         <!-- Section: Jelentkezés -->
