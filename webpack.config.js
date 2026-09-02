@@ -50,8 +50,8 @@ const config = {
             filename: 'en.html',
         }),
         new HtmlWebpackPlugin({
-            template: 'public/rolunk/bot.html',
-            filename: 'rolunk/bot.html',
+            template: 'public/docs/bot/index.html',
+            filename: 'docs/bot/index.html',
         }),
         new CopyWebpackPlugin({
             patterns: [
