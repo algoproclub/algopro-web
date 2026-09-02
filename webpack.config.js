@@ -49,6 +49,10 @@ const config = {
             template: 'public/en.html',
             filename: 'en.html',
         }),
+        new HtmlWebpackPlugin({
+            template: 'public/docs/bot/index.html',
+            filename: 'docs/bot/index.html',
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'content', to: 'content' }
