@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="hu" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our bot - Algo Pro Club</title>
+    <meta name="description" content="Documentation of our code submission system for webmasters.">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#111827">
+
+    <link href="../styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-base-100 font-sans text-base-content">
+
+    <header class="navbar bg-base-200 z-[100] sticky top-0 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown lg:hidden">
+                <label tabindex="0" class="btn btn-ghost">
+                    <i class="fas fa-bars text-xl"></i>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52">
+                    <li><a href="/en.html">Home</a></li>    
+                </ul>
+            </div>
+            <a href="/" class="flex items-center gap-2">
+                <img src="../assets/algo_pro_logo_wobg.png" alt="logo" class="w-[40px] h-[40px]">
+            </a>
+        </div>
+
+        <div class="navbar-center">
+            <h1><a class="btn btn-ghost normal-case text-lg" href="/en.html">Algo Pro Club</a></h1>
+            <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-sm">
+                    <li><a href="/en.html" class="font-medium">Home</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            <a class="btn btn-primary hidden lg:inline-flex mr-3" target="_blank"
+                href="https://forms.gle/xT1ftLWNt2vHkVt67">Apply Now</a>
+            <a href="/" class="mx-2">
+                <img src="../assets/hungary.png" alt="Magyar" class="w-[40px] h-[40px]">
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-base-100 pt-8 pb-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="p-3 bg-purple-100 dark:bg-purple-900/30 rounded-lg mb-6 w-fit mx-auto">
+                    <i class="fas fa-robot text-3xl text-purple-600 dark:text-purple-400"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Our bot</h1>
+                <p class="text-lg md:text-xl text-base-content/80 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    Automated code submission from our online IDE
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-12 md:py-20">
+
+        <!-- Section: Intro -->
+        <section class="mb-12 md:mb-20">
+            <div class="bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded">
+                        <i class="fas fa-info-circle text-xl text-purple-600 dark:text-purple-400"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-purple-700 dark:text-purple-300">Our IDE</h2>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-base-100 p-6 rounded border-l-4 border-purple-500">
+                        <p class="text-lg leading-relaxed">
+                            We host an online IDE at <a href="https://ide.algopro.hu" class="font-bold text-purple-700 dark:text-purple-300">ide.algopro.hu</a>, which we use for our programming classes. Our students can write and execute code for class exercises found on sites such as Codeforces and AtCoder. It also supports executing test cases. Finally, teachers can view their students' submissions to check their progress, and even edit if necessary.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-base-100 p-6 rounded border">
+                        <p class="text-lg leading-relaxed">
+                            There is a submission feature built into the IDE that allows pushing the solutions to the original problem site and fetching the test results. This simplifies the lives of our students, who would otherwise need to visit the site, submit and later check the results, and our teachers as well, since they can see everything in a single window.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Supported sites -->
+        <section class="mb-12 md:mb-20 scroll-mt-20" id="tananyag">
+            <div class="bg-base-200 p-8 md:p-10 rounded-lg">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded">
+                        <i class="fas fa-graduation-cap text-xl text-purple-600 dark:text-purple-400"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-purple-700 dark:text-purple-300">Supported sites</h2>
+                </div>
+                
+                <div class="bg-base-100 p-6 rounded border-l-4 border-purple-500 mb-6">
+                    <p class="text-lg leading-relaxed">
+                        The current list of supported competitive programming sites is the following:
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded">
+                                <img src="assets/codeforces.webp" class="h-[1.5em] aspect-square text-xl"/>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-blue-700 dark:text-blue-300 mb-2">Codeforces</h3>
+                                <p class="text-sm opacity-70"><a href="https://codeforces.com">https://codeforces.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-green-100 dark:bg-green-900/30 rounded">
+                                <img src="assets/spoj.png" class="h-[1.5em] aspect-square text-xl"/>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-green-700 dark:text-green-300 mb-2">Sphere Online Judge</h3>
+                                <p class="text-sm opacity-70"><a href="https://www.spoj.com">https://www.spoj.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-yellow-100 dark:bg-yellow-900/30 rounded">
+                                <img src="assets/atcoder.png" class="h-[1.5em] aspect-square text-xl"/>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-yellow-700 dark:text-yellow-300 mb-2">AtCoder</h3>
+                                <p class="text-sm opacity-70"><a href="https://atcoder.jp">https://atcoder.jp</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-red-100 dark:bg-red-900/30 rounded">
+                                <img src="assets/ojuz.png" class="h-[1.5em] aspect-square text-xl"/>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-red-700 dark:text-red-300 mb-2">oj.uz</h3>
+                                <p class="text-sm opacity-70"><a href="https://oj.uz">https://oj.uz</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-orange-100 dark:bg-orange-900/30 rounded">
+                                <img src="assets/cses.png" class="h-[1.5em] aspect-square text-xl"/>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-orange-700 dark:text-orange-300 mb-2">CSES</h3>
+                                <p class="text-sm opacity-70"><a href="https://cses.fi">https://cses.fi</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-base-100 p-6 rounded flex items-start gap-4">
+                            <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded">
+                                <img src="assets/njudge.png" class="h-[1.5em] aspect-square text-xl"/>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-purple-700 dark:text-purple-300 mb-2">NJudge</h3>
+                                <p class="text-sm opacity-70"><a href="https://njudge.hu">https://njudge.hu</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Automated functions -->
+        <section class="mb-12 md:mb-20">
+            <div class="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
+                <div class="lg:w-2/3">
+                    <div class="bg-base-200 p-8 md:p-10 rounded-lg">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="p-2 bg-purple-100 dark:bg-purple-900/30 rounded">
+                                <i class="fas fa-flag text-xl text-purple-600 dark:text-purple-400"></i>
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-purple-700 dark:text-purple-300">Submission bot features</h2>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-base-100 p-6 rounded border-l-4 border-purple-500">
+                                <p class="text-lg leading-relaxed">
+                                    The programming sites we use for our classes have secret test cases we could not duplicate for our students (public tests can be executed directly in the IDE). To solve this, we submit their code directly, then import the results into our user interface without any further clicks required.
+                                </p>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="bg-base-100 p-4 rounded border">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <i class="fas fa-upload text-purple-600 dark:text-purple-400"></i>
+                                        <h3 class="font-semibold text-purple-700 dark:text-purple-300">Code submission</h3>
+                                    </div>
+                                    <p class="text-sm opacity-70">Upload students' code to a programming site</p>
+                                </div>
+                                
+                                <div class="bg-base-100 p-4 rounded border">
+                                    <div class="flex items-center gap-2 mb-3">
+                                        <i class="fas fa-list-check text-purple-600 dark:text-purple-400"></i>
+                                        <h3 class="font-semibold text-purple-700 dark:text-purple-300">Fetching test results</h3>
+                                    </div>
+                                    <p class="text-sm opacity-70">Upon completion of the tests, import the results</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/3">
+                    <div class="bg-base-200 p-6 rounded-lg border border-base-300 dark:border-base-content/10">
+                        <div class="flex items-center gap-3 mb-4">
+                            <i class="fas fa-trophy text-2xl text-accent"></i>
+                            <h3 class="text-xl font-bold">Autonomy (or the lack of it)</h3>
+                        </div>
+                        <p class="mb-4 leading-relaxed">
+                            Our submission bot never acts on its own, only upon request by our users (all students or teachers of our organization, there is no public IDE access).
+                        </p>
+                        <p class="text-sm text-base-content/70">
+                            It's definitely not an AI agent!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-base-300 p-8">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="../assets/algo_pro_logo_wobg.png" alt="algo pro logo" class="w-[40px] h-[40px]">
+                    <div>
+                        <div class="font-semibold">Algo Pro Club</div>
+                        <div class="text-sm opacity-70">Our bot</div>
+                    </div>
+                </div>
+                <div class="text-center text-sm opacity-70">
+                    <p>Copyright © 2026 - All rights reserved | <a href="/content/adatvedelmi_tajekoztato.pdf" target="_blank" class="hover:underline">Privacy Policy (Hungarian)</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dark theme is now default - no theme switching needed
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

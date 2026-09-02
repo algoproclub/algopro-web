@@ -49,6 +49,10 @@ const config = {
             template: 'public/en.html',
             filename: 'en.html',
         }),
+        new HtmlWebpackPlugin({
+            template: 'public/rolunk/bot.html',
+            filename: 'rolunk/bot.html',
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'content', to: 'content' }
